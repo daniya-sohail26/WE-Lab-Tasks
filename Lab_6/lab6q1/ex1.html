@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <form name="calc">
+            <input type="text" name="action" value="" id="action" readonly>
+            <table>
+                <tr>
+                    <td><input type="button" value="1" onclick="appendToCalc('1')"></td>
+                    <td><input type="button" value="2" onclick="appendToCalc('2')"></td>
+                    <td><input type="button" value="3" onclick="appendToCalc('3')"></td>
+                    <td><input type="button" value="+" onclick="appendToCalc('+')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="4" onclick="appendToCalc('4')"></td>
+                    <td><input type="button" value="5" onclick="appendToCalc('5')"></td>
+                    <td><input type="button" value="6" onclick="appendToCalc('6')"></td>
+                    <td><input type="button" value="-" onclick="appendToCalc('-')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="7" onclick="appendToCalc('7')"></td>
+                    <td><input type="button" value="8" onclick="appendToCalc('8')"></td>
+                    <td><input type="button" value="9" onclick="appendToCalc('9')"></td>
+                    <td><input type="button" value="*" onclick="appendToCalc('*')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="0" onclick="appendToCalc('0')"></td>
+                    <td><input type="button" value="^2" onclick="squareCalc()"></td>
+                    <td><input type="button" value="^3" onclick="cubeCalc()"></td>
+                    <td><input type="button" value="/" onclick="appendToCalc('/')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="√" onclick="sqrtCalc()"></td>
+                    <td><input type="button" value="log" onclick="logCalc()"></td>
+                    <td><input type="button" value="sin" onclick="trigCalc('sin')"></td>
+                    <td><input type="button" value="cos" onclick="trigCalc('cos')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="tan" onclick="trigCalc('tan')"></td>
+                    <td colspan="2"><input type="button" value="ax^2+bx+c" onclick="solveQuadratic()"></td>
+                    <td><input type="button" value="=" onclick="calculateResult()"></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><input type="reset" value="Reset"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
+

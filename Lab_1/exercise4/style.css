@@ -1,0 +1,20 @@
+.user {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url('sample-user.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .int{
+    display:flex;
+    justify-content: space-between;
+    flex-basis: 100%;
+}
+
+.bold{
+    font-weight: bolder;
+}

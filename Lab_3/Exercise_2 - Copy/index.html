@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Lab2 Exercise 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<html>
+
+<head>
+    <title>Homework 1</title>
+</head>
+
+<body>
+    <table width="350" border="1">
+        <tr>
+            <th><label for="last name">Last Name</label></th>
+            <td><input type="text" size="50" value="Nakov" name="last name"
+                    style="margin-right: 0px; padding-right: 0px;"></td>
+        </tr>
+        <tr>
+            <th><label for="first name">First Name</label></th>
+            <td><input type="text" size="50" value="Svetlin" name="first name"
+                    style="margin-right: 0px; padding-right: 0px;"></td>
+        </tr>
+        <tr>
+            <th><label for="address">Address</label></th>
+            <td>
+                <form>
+                    <textarea>17 Hristo Botev Str. floor 3. apt. 12</textarea>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <th><label for="city">City</label></th>
+            <td colspan="1"><input type="text" size="20" value="Kaspichan" name="city"
+                    style="margin-right: 0px; padding-right: 0px;"><label for="state" style="font-weight: bold;">State</label>
+            <input id="state" name="state" type="text" size="6" required="required" /></</td>
+            
+        </tr>
+        <tr>
+            <th><label for="zip/postal code">Zip/Postal code</label></th>
+            <td><input type="text" size="50" value="9325" name="postal code"
+                    style="margin-right: 0px; padding-right: 0px;"></td>
+        </tr>
+        <tr>
+            <th><label for="country">Country</label></th>
+            <td><select name="country">
+                    <option value="Value 1" selected="selected">Bulgaria</option>
+                    <option value="Value 2">Germany</option>
+                    <option value="Value 3">Poland</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th><label for="phone">Phone(country code,area code,number)</label></th>
+            <td><input id="phone" name="phone" type="text" placeholder="(+359 88 8334343" required="required" /></td>
+        </tr>
+        <tr>
+            <th><label for="email">Email</label></th>
+            <td><input id="email" name="email" type="text" placeholder="nakov@kaspichan.org" required="required" />
+            </td>
+        </tr>
+        <tr>
+            <th><label for="birth day">Birth day</label></th>
+            <td>
+                <label>Month</label>
+                <input type="text" size="1" value="06" name="month" style="margin-right: 0px; padding-right: 0px;">
+                <label>Day</label>
+                <input type="text" size="1" value="14" name="day" style="margin-right: 0px; padding-right: 0px;">
+                <label>Year (4 digit)</label>
+                <input type="text" size="4" value="1980" name="year" style="margin-right: 0px; padding-right: 0px;">
+            </td>
+        </tr>
+        <tr>
+            <th><label for="country">Gender</label></th>
+            <td><select name="country">
+                    <option value="Value 1" selected="selected">Male</option>
+                    <option value="Value 2">Female</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th><label for="starting date">Starting date</label></th>
+            <td>
+                <input id="date1" type="radio" checked="checked" name="date" />
+                <label>Spring 2006</label>
+                <input id="date2" type="radio" name="date" />
+                <label>Summer 2006</label>
+            </td>
+        </tr>
+        <tr>
+            <th><label for="comments">Comments/Questions</label></th>
+            <td>
+                <form>
+                    <textarea>Please send me more information about lodging.</textarea>
+                </form>
+            </td>
+        </tr>
+        <tr class="special">
+            <td style="padding:5px" colspan="100%">
+                <div style="display:flex;justify-content: center;gap:10px;">
+                <input type="submit" value="Submit" name="submit form" />
+                <input type="reset" value="Clear This Form" name="clear" />
+            </div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

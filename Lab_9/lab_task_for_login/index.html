@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language="javascript" type="text/javascript">
+        var reg_no=/[0-9]{5}/;
+        var current_sem=/[0-8]{1}/;
+        var enroll_no=/[A-Z]{3}\/[0-9]{4}\/[0-4]{4}/;
+        var course_code=/[A-Z]{2}-[0-9]{3}/;
+        function Registration_Number(reg_num)
+        {
+            var e1Bool=new Boolean();
+            e1Bool=reg_no.test(reg_num);
+            if(e1Bool){
+                alert("thank you for correct info. ");
+            }
+            else{
+                alert("please correct the format..")
+            }
+        }
+
+        function Current_Sem(current_seme)
+        {
+            var e2Bool=new Boolean();
+            e2Bool=current_sem.test(current_seme);
+            if(e2Bool){
+                alert("thank you for correct info. ");
+            }
+            else{
+                alert("please correct the format..")
+            }
+        }
+
+        function Enroll_Number(enroll_num)
+        {
+            var e3Bool=new Boolean();
+            e3Bool=enroll_no.test(enroll_num);
+            if(e3Bool){
+                alert("thank you for correct info. ");
+            }
+            else{
+                alert("please correct the format..")
+            }
+        }
+
+        function Course_code(course_co)
+        {
+            var e4Bool=new Boolean();
+            e4Bool=course_code.test(course_co);
+            if(e4Bool){
+                alert("thank you for correct info. ");
+            }
+            else{
+                alert("please correct the format..")
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="" name="myform">
+        <input type="text" name="reg_no" id="text1" /><br>
+        <br> <input type="button" name="button1" value="click" onclick="Registration_Number(document.myform.reg_no.value)"/><br>
+        <input type="text" name="current_sem" id="text2" /><br>
+        <br> <input type="button" name="button2" value="click" onclick="Current_Sem(document.myform.current_sem.value)"/><br>
+        <input type="text" name="enroll_no" id="text3" /><br>
+        <br> <input type="button" name="button3" value="click" onclick="Enroll_Number(document.myform.enroll_no.value)"/><br>
+        <input type="text" name="course_code" id="text4" /><br>
+        <br> <input type="button" name="button4" value="click" onclick="Course_code(document.myform.course_code.value)"/><br>
+    </form>
+</body>
+</html>

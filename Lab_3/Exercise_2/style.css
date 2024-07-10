@@ -1,0 +1,11 @@
+
+.container{
+    width:50%;
+    margin:20px auto;
+    text-align: center;
+    padding:20px;
+}
+
+label{
+    font-weight: bold;
+}

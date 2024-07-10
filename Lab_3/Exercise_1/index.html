@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continental Hotel Reservation Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form action="">
+        <h2>Continental Hotel Reservation Form</h2>
+        <table border="2">
+            <tr>
+                <th>Name</th>
+                <td><input type="text" name="name" placeholder="Enter your name"></td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <th>Mobile No</th>
+                <td><input type="number" name="mobile_no" placeholder="Enter your cell no"></td>
+            </tr>
+            <tr>
+                <th>Arrival Time</th>
+                <td><input type="text" name="arrival_time" placeholder="Enter your arrival time"></td>
+            </tr>
+            <tr>
+                <th>Departure</th>
+                <td><input type="text" name="departure">
+                    <input type="text" name="departure"></td>
+            </tr>
+            <tr>
+                <th>Room Type</th>
+                <td>
+                    <label><input type="radio" name="room_type" value="Single">Single</label>
+                    <label><input type="radio" name="room_type" value="Double">Double</label>
+                    <label><input type="radio" name="room_type" value="Presidential Suite">Presidential Suite</label>
+                </td>
+            </tr>
+            <tr>
+                <th>Preferences</th>
+                <td>
+                    <label><input type="checkbox" name="preferences" value="Non-Smoking">Non-Smoking</label>
+                    <label><input type="checkbox" name="preferences" value="Internet">Internet</label>
+                    <label><input type="checkbox" name="preferences" value="Firm Mattress">Firm Mattress</label>
+                </td>
+            </tr>
+            <tr>
+                <th>Mode of Payments</th>
+                <td>
+                    <label><input type="checkbox" name="payment_mode" value="Cash">Cash</label>
+                    <label><input type="checkbox" name="payment_mode" value="Cheque">Cheque</label>
+                    <label><input type="checkbox" name="payment_mode" value="Credit Card">Credit Card</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;"><button class="special">Send Data</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

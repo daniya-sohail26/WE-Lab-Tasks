@@ -1,0 +1,46 @@
+body{
+    background-image: url("https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    font-family: 'Poppins',sans-serif;
+}
+
+
+.category{
+    background-color: bisque;
+    width:800px;
+    height:95vh;
+    border-radius: 20px;
+    border: 8px solid maroon;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    opacity:0.9;
+    color: maroon;
+}
+
+button {
+    font-family: 'Poppins',sans-serif;
+    width: 100px;
+    padding: 10px;
+    background-color: maroon;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius:10px;
+}
+
+button:hover {
+    background-color: rgb(100, 4, 4);
+}
+
+.order-summary {
+    font-family: 'Poppins',sans-serif;
+    margin-top: 20px;
+    width:60%;
+    height:180px;
+    resize:none;
+}

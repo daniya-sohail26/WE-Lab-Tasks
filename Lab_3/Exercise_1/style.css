@@ -1,0 +1,31 @@
+h2 {
+    
+    color: maroon;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    
+    
+}
+
+form {
+    padding-top: 20px;
+    width:40%;
+    height:90vh;
+    background: gainsboro;
+    margin:20px auto;
+    padding-bottom:20px;text-align: center;
+}
+
+table{
+    border-color: rgb(91,141,207); 
+    height:80vh;
+    margin:5px auto;
+    background-color: rgb(210,222,238);
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    form {
+        width: 90%; 
+    }
+}

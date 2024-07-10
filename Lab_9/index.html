@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <script language="javascript" type="text/javascript">
+        var rex_email=/[a-z0-9]{4,25}@[a-z]{4,9}.{com|net|org|info}/g;
+        function VData(Email)
+        {
+            var eBool=new Boolean();
+            eBool=rex_email.test(Email);
+            if(eBool){
+                alert("thank you for correct info. ");
+            }
+            else{
+                alert("please correct the format..")
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="" name="myform">
+        <input type="text" name="username" id="text1" /><br>
+        <br> <input type="button" name="button1" value="click" onclick="VData(document.myform.username.value)"/>
+    </form>
+</body>
+</html>

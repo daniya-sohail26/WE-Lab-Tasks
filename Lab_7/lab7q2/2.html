@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="maindiv">
+        <form id="myForm">
+            <h1>Welcome To My Account Login</h1>
+            
+            <div class="form-group">
+                <label for="username">Enter User Name :</label>
+                <input id="username" type="text" placeholder="Enter user name here">
+                <span id="iusername"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Enter Password :</label>
+                <input id="password" type="password" placeholder="Enter Password here">
+                <span id="ipassword"></span>
+            </div>
+            
+            <div class="button-group">
+                <button type="button" class="btn reset" onclick="doReset()">Reset</button>
+                <button type="button" class="btn login" onclick="validation()">Login</button>
+            </div>
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
+

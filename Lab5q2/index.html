@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 5 Question no 2</title>
+    <style>
+        .box {
+            border-radius: 10px;
+            width: 800px;
+            margin: auto;
+            height: 1050px;
+            background-color: rgb(131, 192, 188);
+            text-align: center;
+            align-items: center;
+        }
+
+        h1 {
+            padding-top: 30px;
+            font-weight: 900;
+            font-size: 34px;
+            color: rgb(9, 69, 63);
+        }
+
+        label {
+            font-size: 27px;
+            margin-top: 3%;
+            font-weight: 700;
+        }
+
+        input {
+            margin-bottom: 2%;
+            width: 300px;
+            margin-top: 2px;
+            border-radius: 12px;
+            height: 23px;
+            margin-left: 5px;
+        }
+
+        button {
+            margin-bottom: 5px;
+            width: 150px;
+            margin-top: 2px;
+            border-radius: 12px;
+            height: 40px;
+            margin-left: 5px;
+            background-color: rgb(67, 122, 122);
+            font-weight: 700;
+        }
+
+        button:hover {
+            background-color: rgb(113, 152, 152);
+            cursor: pointer;
+        }
+
+        .details-container {
+            width: 60%;
+            margin: 20px auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>Personal Details</h1>
+        <form action="">
+            <label for="">Name</label>
+            <br><input type="text" class="input-details">
+            <br>
+            <label for="">Father's Name</label>
+            <br>
+            <input type="text" class="input-details">
+            <br>
+            <label for="">Date of Birth</label>
+            <br><input type="date" class="input-details">
+            <br>
+            <label for="">Age</label>
+            <br><input type="number" class="input-details">
+            <br>
+            <label for="">Nationality</label>
+            <br><input type="text" class="input-details">
+            <br>
+            <label for="">Sex</label>
+            <br><input type="text" class="input-details">
+            <br>
+            <label for="">Academic Background</label>
+            <br><input type="text" class="input-details">
+            <br>
+            <label for="">Working Experience</label>
+            <br><input type="text" class="input-details">
+            <br>
+            <label for="">Professional Skills</label>
+            <br><input type="text" class="input-details">
+            <br>
+            <label for="">Awards</label>
+            <br><input type="text" class="input-details">
+            <br>
+            <label for="">Achievements</label>
+            <br><input type="text" class="input-details">
+        </form>
+        <button class="show">Show Details</button>
+    </div>
+    <div class="details-container" id="details-container">
+        <h2>PERSONAL DETAILS</h2>
+        <ul id="details-list"></ul>
+    </div>
+    <script>
+        var display = document.querySelector('.show');
+        display.addEventListener('click', function () {
+            const inputs = document.querySelectorAll('.input-details');
+            const detailsArray = [];
+            inputs.forEach(function (input) {
+                detailsArray.push(input.value);
+            });
+            var detailsList = document.querySelector('#details-list');
+            detailsList.innerHTML = "";
+            detailsArray.forEach(function (detail) {
+                var listItem = document.createElement('li');
+                listItem.textContent = detail;
+                detailsList.appendChild(listItem);
+            });
+        });
+    </script>
+</body>
+
+</html>
+
